@@ -15,11 +15,14 @@ The `ci-test-config.json` file is fetched from the master branch during CI runs 
 
 ## Configuration Structure
 
-The config is a simple array of test skip entries. Each entry contains:
+The config is a simple array of test skip entries. Each entry contains one or both:
 
-- `_comment` (required) - Explanation of why these tests are being skipped
 - `clojure_vars` (optional) - Array of fully-qualified Clojure test var names to skip
 - `cypress_tests` (optional) - Array of Cypress test objects with `describe` and `it` fields (for use with cypress-grep)
+
+And optionally 
+
+- `_comment` (optional) - Explanation of why these tests are being skipped
 
 ### Example
 
@@ -28,7 +31,7 @@ The config is a simple array of test skip entries. Each entry contains:
   "version": "1.0.0",
   "skipped_tests": [
     {
-      "_comment": "send-email test has schema error if emails from another thread are present",
+      "_comment": "send-email test has schema error if emails from another thread are present, sometimes",
       "clojure_vars": [
         "metabase.session.models.session-test/send-email-on-first-login-from-new-device-test"
       ]
@@ -65,7 +68,7 @@ When a test is fixed:
 
 ## Notes
 
-- Always include a clear `_comment` - future developers need to understand why a test was skipped
+- Optionally include a clear `_comment`, and/or write good a commit message - we need to understand why a test was skipped
 - Use git blame/log to track who added a skip and when
-- This config is fetched from master, so changes take effect immediately for all CI runs
-- Keep the config clean - remove skips as soon as tests are fixed
+- This config is fetched from master in the [metabase repo](https://github.com/metabase/metabase/blob/read-ci-test-config-from-the-new-repo/.github/actions/prepare-backend/action.yml#L34), so changes take effect immediately for all CI runs
+- Remove skips when tests are fixed
