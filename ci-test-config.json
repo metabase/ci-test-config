@@ -1,17 +1,39 @@
 {
   "version": "1.0.0",
-  "ignored": {
-    "vars": [
-      "metabase.session.models.session-test/send-email-on-first-login-from-new-device-test",
-      "metabase-enterprise.impersonation.driver-test/nested-do-with-connection-with-options-test",
-      "metabase.warehouse-schema.api.table-test/update-table-sync-test",
-      "metabase.warehouses.api-test/can-rescan-fieldvalues-for-a-db",
-      "metabase-enterprise.transforms-python.transforms-api-test/python-transform-schema-change-integration-test"
-    ]
-  },
-  "metadata": {
-    "last_updated": "2025-08-02",
-    "updated_by": "dpsutton",
-    "reason": "Two flakes: send-email-on-first-login-from-new-device-test has schema error if emails from another thread are present; nested-do-with-connection-with-options-test is causing deadlocks i believe."
-  }
+  "skipped_tests": [
+    {
+      "_comment": "send-email test has schema error if emails from another thread are present",
+      "clojure_vars": [
+        "metabase.session.models.session-test/send-email-on-first-login-from-new-device-test"
+      ]
+    },
+    {
+      "_comment": "nested-do-with-connection test is causing deadlocks",
+      "clojure_vars": [
+        "metabase-enterprise.impersonation.driver-test/nested-do-with-connection-with-options-test"
+      ]
+    },
+    {
+      "_comment": "Flaky sync and fieldvalues tests",
+      "clojure_vars": [
+        "metabase.warehouse-schema.api.table-test/update-table-sync-test",
+        "metabase.warehouses.api-test/can-rescan-fieldvalues-for-a-db"
+      ]
+    },
+    {
+      "_comment": "Schema changes break transform integration",
+      "clojure_vars": [
+        "metabase-enterprise.transforms-python.transforms-api-test/python-transform-schema-change-integration-test"
+      ]
+    },
+    {
+      "_comment": "Flaky dashboard filter interactions",
+      "cypress_tests": [
+        {
+          "describe": "Dashboard Filters",
+          "it": "should handle date ranges"
+        }
+      ]
+    }
+  ]
 }
