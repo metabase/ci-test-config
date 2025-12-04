@@ -2,11 +2,13 @@
   "version": "1.0.0",
   "ignored": {
     "vars": [],
-    "drivers": []
+    "drivers": [
+      "snowflake"
+    ]
   },
   "metadata": {
     "last_updated": "2025-12-04",
-    "updated_by": "dan",
-    "reason": "Snowflake user `METABASE CI` had its default role set to sysadmin instead of accountadmin and could no longer see a dataset that was created from accountadmin derived permissions. That has been fixed now."
+    "updated_by": "rileythomp",
+    "reason": "Disabling Snowflake tests because there seems to have been query processor changes that broke them"
   }
 }
