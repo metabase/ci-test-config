@@ -2,13 +2,11 @@
   "version": "1.0.0",
   "ignored": {
     "vars": [],
-    "drivers": [
-      "snowflake"
-    ]
+    "drivers": []
   },
   "metadata": {
     "last_updated": "2025-12-04",
     "updated_by": "rileythomp",
-    "reason": "Disabling Snowflake tests because there seems to have been query processor changes that broke them"
+    "reason": "Reenabling snowflake. Seems like the foreign keys in the test dataset were not correctly setup"
   }
 }
