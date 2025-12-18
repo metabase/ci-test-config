@@ -3,12 +3,13 @@
   "ignored": {
     "vars": [],
     "drivers": [
-      "snowflake"
+      "snowflake",
+      "redshift"
     ]
   },
   "metadata": {
-    "last_updated": "2025-11-21",
+    "last_updated": "2025-12-18",
     "updated_by": "bryan",
-    "reason": "Snowflake is on fire. Thrashing creating and deleting the test-data dataset"
+    "reason": "Snowflake is on fire. Thrashing creating and deleting the test-data dataset.\nRedshift is timing out, blocking any PR that triggers driver tests."
   }
 }
