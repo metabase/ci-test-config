@@ -3,7 +3,8 @@
   "ignored": {
     "vars": [],
     "drivers": [
-      "snowflake"
+      "snowflake",
+      "redshift"
     ]
   },
   "metadata": {
