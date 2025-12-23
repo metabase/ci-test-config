@@ -3,13 +3,12 @@
   "ignored": {
     "vars": [],
     "drivers": [
-      "snowflake",
-      "redshift"
+      "snowflake"
     ]
   },
   "metadata": {
-    "last_updated": "2025-12-18",
+    "last_updated": "2025-12-23",
     "updated_by": "bryan",
-    "reason": "Snowflake dataset creation is failing with Database '\"sha_c1baee7db240aa419104c2d925a07a4d4faeeb24_test-data\"' does not exist or not authorized. \nRedshift is timing out, blocking any PR that triggers driver tests."
+    "reason": "removed redshift from drivers, because it shouldn't timeout with the new schema cleanup logic" 
   }
 }
