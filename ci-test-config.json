@@ -1,13 +1,14 @@
 {
   "version": "1.0.0",
   "ignored": {
-    "vars": [],
-    "drivers": [
-    ]
+    "vars": [
+      "snowflake"
+    ],
+    "drivers": []
   },
   "metadata": {
     "last_updated": "2025-12-23",
     "updated_by": "bryan",
-    "reason": "removed snowflake from drivers, there was a permissions error between the PK and CI users, which has been resolved" 
+    "reason": "removed snowflake from drivers, there was a permissions error between the PK and CI users, which has been resolved"
   }
 }
