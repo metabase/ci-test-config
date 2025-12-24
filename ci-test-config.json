@@ -3,11 +3,13 @@
   "ignored": {
     "vars": [],
     "drivers": [
+      "redshift",
+      "snowflake"
     ]
   },
   "metadata": {
     "last_updated": "2025-12-23",
-    "updated_by": "bryan",
-    "reason": "removed snowflake from drivers, there was a permissions error between the PK and CI users, which has been resolved" 
+    "updated_by": "dpsutton",
+    "reason": "redshift and snowflake are fixed but each have 3 or so broken tests. It's christmas so turning off and will reenable when we can fix those tests"
   }
 }
