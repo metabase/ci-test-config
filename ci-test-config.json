@@ -2,11 +2,13 @@
   "version": "1.0.0",
   "ignored": {
     "vars": [],
-    "drivers": []
+    "drivers": [
+      "snowflake"
+    ]
   },
   "metadata": {
     "last_updated": "2026-01-21",
     "updated_by": "bryan",
-    "reason": "All drivers unquarantined"
+    "reason": "Snowflake tests are failing due to table pollution"
   }
 }
