@@ -2,11 +2,13 @@
   "version": "1.0.0",
   "ignored": {
     "vars": [],
-    "drivers": []
+    "drivers": [
+      "databricks"
+    ]
   },
   "metadata": {
-    "last_updated": "2026-01-21",
-    "updated_by": "bryan",
-    "reason": "All drivers unquarantined"
+    "last_updated": "2026-02-10",
+    "updated_by": "dan",
+    "reason": "Combat databricks timeouts in CI"
   }
 }
