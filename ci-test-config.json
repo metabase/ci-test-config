@@ -3,12 +3,13 @@
   "ignored": {
     "vars": [],
     "drivers": [
+      "bigquery-cloud-sdk",
       "databricks"
     ]
   },
   "metadata": {
-    "last_updated": "2026-02-10",
+    "last_updated": "2026-02-12",
     "updated_by": "dan",
-    "reason": "Combat databricks timeouts in CI"
+    "reason": "Combat databricks timeouts in CI (databricks), bigquery has no test-dataset and is failing"
   }
 }
