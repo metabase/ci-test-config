@@ -8,13 +8,14 @@ This repository contains `ci-test-config.json`, which specifies which driver tes
 
 ### Fields
 
-- **`ignored.drivers`**: Array of driver names to skip tests for. Names must match exactly what appears in the `DRIVERS:` lines in [metabase/.github/workflows/drivers.yml](https://github.com/metabase/metabase/blob/master/.github/workflows/drivers.yml)
+- **`ignored.drivers`**: Array of driver names to skip tests for. Names must match the driver keywords defined in `all-drivers` in [mage/src/mage/modules.clj](https://github.com/metabase/metabase/blob/master/mage/src/mage/modules.clj).
 
-  Valid driver names as of 2025-12:
+  Valid driver names as of 2026-02:
   ```
-  athena, bigquery-cloud-sdk, clickhouse, databricks, druid, druid-jdbc,
-  mongo, mysql, oracle, postgres, presto-jdbc, redshift, snowflake,
-  sparksql, sqlite, sqlserver, vertica
+  h2, athena, bigquery, clickhouse, databricks, druid, druid-jdbc,
+  mongo, mongo-ssl, mongo-sharded-cluster, mysql-mariadb, oracle,
+  postgres, presto-jdbc, redshift, snowflake, sparksql, sqlite,
+  sqlserver, vertica
   ```
 
 - **`metadata`**: Tracking information for the changes
