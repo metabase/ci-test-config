@@ -2,11 +2,7 @@
   "version": "1.0.0",
   "ignored": {
     "vars": [],
-    "drivers": [
-      "bigquery",
-      "databricks",
-      "snowflake"
-    ]
+    "drivers": []
   },
   "metadata": {
     "last_updated": "2026-02-12",
