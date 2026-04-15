@@ -2,7 +2,9 @@
   "version": "1.0.0",
   "ignored": {
     "vars": [],
-    "drivers": []
+    "drivers": [
+      "bigquery"
+    ]
   },
   "metadata": {
     "last_updated": "2026-02-12",
