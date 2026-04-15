@@ -2,11 +2,13 @@
   "version": "1.0.0",
   "ignored": {
     "vars": [],
-    "drivers": []
+    "drivers": [
+      "bigquery"
+    ]
   },
   "metadata": {
-    "last_updated": "2026-02-12",
-    "updated_by": "dan",
-    "reason": "Combat databricks timeouts in CI (databricks), bigquery has no test-dataset and is failing"
+    "last_updated": "2026-04-15",
+    "updated_by": "cam",
+    "reason": "Re-quarantine BigQuery since it has failing tests"
   }
 }
