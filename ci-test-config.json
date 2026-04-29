@@ -3,12 +3,13 @@
   "ignored": {
     "vars": [],
     "drivers": [
-      "bigquery"
+      "bigquery",
+      "databricks"
     ]
   },
   "metadata": {
-    "last_updated": "2026-04-15",
-    "updated_by": "cam",
-    "reason": "Re-quarantine BigQuery since it has failing tests"
+    "last_updated": "2026-04-30",
+    "updated_by": "fraser",
+    "reason": "Combat databricks timeouts in CI"
   }
 }
