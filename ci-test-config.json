@@ -4,12 +4,13 @@
     "vars": [],
     "drivers": [
       "bigquery",
-      "databricks"
+      "databricks",
+      "snowflake"
     ]
   },
   "metadata": {
-    "last_updated": "2026-04-30",
-    "updated_by": "fraser",
-    "reason": "Combat databricks timeouts in CI"
+    "last_updated": "2026-05-05",
+    "updated_by": "rileythomp",
+    "reason": "Combat snowflake failures in CI"
   }
 }
