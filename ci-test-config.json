@@ -4,12 +4,13 @@
     "vars": [],
     "drivers": [
       "bigquery",
+      "snowflake",
       "databricks"
     ]
   },
   "metadata": {
-    "last_updated": "2026-05-22",
+    "last_updated": "2026-05-27",
     "updated_by": "technomancy",
-    "reason": "Restore snowflake now that it's allowed to fail, to gather data"
+    "reason": "Disable snowflake again because red Xs are sadness"
   }
 }
