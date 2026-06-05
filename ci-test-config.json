@@ -3,14 +3,12 @@
   "ignored": {
     "vars": [],
     "drivers": [
-      "bigquery",
-      "snowflake",
       "databricks"
     ]
   },
   "metadata": {
     "last_updated": "2026-05-27",
     "updated_by": "technomancy",
-    "reason": "Disable snowflake again because red Xs are sadness"
+    "reason": "Snowflake has locks now; should be solid"
   }
 }
