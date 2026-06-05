@@ -3,6 +3,7 @@
   "ignored": {
     "vars": [],
     "drivers": [
+      "bigquery",
       "databricks"
     ]
   },
