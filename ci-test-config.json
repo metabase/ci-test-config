@@ -14,8 +14,8 @@
     "reason": "Snowflake is still failing on most branches."
   },
   "drivers": [
-    { id: "drivers-tests-databricks-ee", status: "skip" },
-    { id: "drivers-tests-snowflake-ee", status: "info" },
-    { id: "drivers-tests-bigquery-ee", status: "info" }
+    { "id": "drivers-tests-databricks-ee", "status": "skip" },
+    { "id": "drivers-tests-snowflake-ee", "status": "info" },
+    { "id": "drivers-tests-bigquery-ee", "status": "info" }
   ]
 }
