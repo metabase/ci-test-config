@@ -12,5 +12,10 @@
     "last_updated": "2026-06-08",
     "updated_by": "nemanjaglumac",
     "reason": "Snowflake is still failing on most branches."
-  }
+  },
+  "drivers": [
+    { "name": "databricks", "status": "skip" },
+    { "name": "snowflake", "status": "info" },
+    { "name": "bigquery", "status": "info" }
+  ]
 }
