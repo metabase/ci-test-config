@@ -2,20 +2,14 @@
   "version": "1.0.0",
   "ignored": {
     "vars": [],
-    "drivers": [
-      "bigquery",
-      "databricks",
-      "snowflake"
-    ]
+    "drivers": ["databricks"]
   },
   "metadata": {
-    "last_updated": "2026-06-08",
-    "updated_by": "nemanjaglumac",
-    "reason": "Snowflake is still failing on most branches."
+    "last_updated": "2026-07-09",
+    "updated_by": "technomancy",
+    "reason": "Bigquery and snowflake reliability is much better now."
   },
   "drivers": [
-    { "name": "databricks", "status": "skip" },
-    { "name": "snowflake", "status": "info" },
-    { "name": "bigquery", "status": "info" }
+    { "name": "databricks", "status": "skip" }
   ]
 }
