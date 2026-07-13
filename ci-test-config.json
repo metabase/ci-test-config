@@ -11,6 +11,6 @@
   },
   "drivers": [
     { "name": "databricks", "status": "skip" },
-    { "name": "snowflake", "status": "skip" },
+    { "name": "snowflake", "status": "skip" }
   ]
 }
