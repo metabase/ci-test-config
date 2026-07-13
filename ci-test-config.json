@@ -5,11 +5,12 @@
     "drivers": ["databricks"]
   },
   "metadata": {
-    "last_updated": "2026-07-09",
+    "last_updated": "2026-07-13",
     "updated_by": "technomancy",
-    "reason": "Bigquery and snowflake reliability is much better now."
+    "reason": "Snowflake randomly started failing again."
   },
   "drivers": [
-    { "name": "databricks", "status": "skip" }
+    { "name": "databricks", "status": "skip" },
+    { "name": "snowflake", "status": "skip" },
   ]
 }
