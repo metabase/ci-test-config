@@ -2,15 +2,12 @@
   "version": "1.0.0",
   "ignored": {
     "vars": [],
-    "drivers": ["databricks"]
+    "drivers": []
   },
   "metadata": {
-    "last_updated": "2026-07-13",
+    "last_updated": "2026-08-04",
     "updated_by": "technomancy",
-    "reason": "Snowflake randomly started failing again."
+    "reason": "Snowflake and databricks are as stable as other drivers now."
   },
-  "drivers": [
-    { "name": "databricks", "status": "skip" },
-    { "name": "snowflake", "status": "skip" }
-  ]
+  "drivers": []
 }
